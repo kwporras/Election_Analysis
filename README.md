@@ -1,14 +1,21 @@
 # Election_Analysis
 
-'Exmplain the purpose of this election audit analysis 
-'The purpose of this election analysis audit is well defined
+## Overview of Election Audit
+The Colorado election committee asked for a number of analytical metrics to be automated in python. If so, they would like to apply it to other congressional districts, senatorial districts, and local elections. In addition to the automation of code and analytical metrics, a request for suggestions for future coding adjustments have been requested.
 
-'colorado board of election committe for us congressional precient, task with reportsing total of votes cast, total for each candidate, percentage for votes for each and 'the winner of the elction based on the populer vote. can we automate it. if so the code will be used to audit other congressional distrcits, senatoral disctrics and local 'elections. 
+##### The requested analytical metrics are listed below:
+1. Total votes cast
+2. Total votes per candidate
+3. Percentage of votes per candidate
+4. Voter turnout per county
+5. Percentage of total votes per county
+6. County with the highest turnout
+7. Winner of election based on the popular vote
 
-'The election commission has requested additional data. Voter turnout for each county, percentage of votes from each county out of the total count, and the county with the ' 'highest turnout.
 
-## [Overview of Election Audit](Analysis/election_analysis.txt)
-### The analysis of the election show that:
+
+## [Election-Audit Results](Analysis/election_analysis.txt)
+### The analysis of the election shows that:
 
 - The total votes were 369,711
 - The number and percentage of total votes for each county in the precinct were:
@@ -26,13 +33,18 @@
   - Winning Percentage: 73.8%
 
 
+## Election-Audit Summary
+The script below is used to define how data in a readable csv will be indexed. In the future if a csv file is provided the candidate name or county name may not be in the same columns as csv file in the [resources file](Resources/election_results.csv). By changing the row index the script can be adjust to correctly read a different csv column layout.        
+![alt text](https://github.com/kwporras/Challenge-3/blob/f84a76aac82899721c48edec85bfddcd5d698444/Resources/Create_a_variable_to_track.PNG)
 
-'In a summary statement, provide a business proposal to the election commission on how this script can be used - with some modifications - for any election. Give at least 'tow examples of how this script can be modified to be used for other elections.
-'There is a statement to the election commission that explores how this script can be used for any election, with two examples for modifying the script.
-## Election Audit Summary
+Additionally, if another variable in a CSV file that needs to be tracked, the below script provides a general useable outline. Use the script above create a new row index, then place that index in the "Insert index number here" spot. Then county_list and county_votes would be replaced and appropriated named for the data that one would wish to track.  
+![alt text](https://github.com/kwporras/Challenge-3/blob/f84a76aac82899721c48edec85bfddcd5d698444/Resources/Selection_of_county_and_candidate_data.PNG)
 
-
-
-## Resources
+##### Resources
 - Data Source: election_results.csv
 - Software: Python 3.9.6, Visual Studio Code, 1.58.0
+
+
+
+
+
